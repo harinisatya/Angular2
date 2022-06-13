@@ -2,9 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-student',
-  templateUrl: './student.component.html',
-  styleUrls: ['./student.component.css']
+  template : '<h1> am a child component </h1>',
+  styleUrls: ['./student.component.css'],
 })
-export class StudentComponent {
-  
-}
+export class StudentComponent {}
