@@ -1,3 +1,17 @@
-<h2>am a app component</h2>
-<p>{{ user }}</p>
+<h1>{{ 'First Name : ' + fname + '   ' + 'LastName : ' + lname }}</h1>
+<!-- interpolation with hard coded strings-->
+<p>{{ 'Number1 : ' + numbe1 + ' &&& ' + ' Number2   : ' + numbe2 }}</p>
+<!---interpolation with hard coded strings -->
+<h2>10+5*7-6 = {{ 10 + 5 * 7 - 6 }}</h2>
+<!---interpolation with mathmatical experssion-->
+<h2>20%of 200={{ numbe2 ? numbe2 * 0.3 : 'not available' }}</h2>
+<!--- interpolation with ternary operator-->
+<p>Full name : {{ getFullName() }}</p>
+<!---interpolation with method-->
+<button [disabled]="IsDisabled" (click)="onClick()">clickhere</button>
+<!---property binding and event binding-->
 <app-student></app-student>
+<button style="color:red;font-weight:bold;font-size:50px">clickme</button>
+<!---Inline styling in style binding-->
+<button [style.font-weight]="isBold ? text : 'normal'">clickme</button>
+<!---styling binding with ternary operator-- -->
