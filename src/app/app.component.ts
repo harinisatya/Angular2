@@ -27,4 +27,25 @@ export class AppComponent {
     return this.fname + ' ' + this.lname;
     // interpolation with method
   }
+
+  // Variables in Style Binding
+  title = 'Style Binding';
+  greeting = 'text color is red';
+  color = 'red';
+  bgColor = 'green';
+  // Method to evaluate Style Binding
+  updateColor() {
+    this.color = 'blue';
+    this.greeting = 'Hey! Text color is changed.';
+  }
+  // Object to evaluate ngStyle directive
+  titleStyles = {
+    fontStyle: 'italic',
+    fontWeight: 'bold',
+  };
+  userStyles = {
+    fontSize: '50px',
+    backgroundColor: 'Grey',
+  };
+  name: string = "";
 }

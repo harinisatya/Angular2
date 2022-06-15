@@ -1,1 +1,8 @@
 /* Add application styles & imports to this file! */
+*
+{
+  box-sizing: border-box;
+  margin: 2px;
+  padding: 5px;
+}
+body { font-family: 'Quicksand', sans-serif;;}

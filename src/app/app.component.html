@@ -1,4 +1,4 @@
-<h1>{{ 'First Name : ' + fname + '   ' + 'LastName : ' + lname }}</h1>
+<h1 [ngStyle]="userStyles">{{ 'fname ' + fname }}</h1>
 <!-- interpolation with hard coded strings-->
 <p>{{ 'Number1 : ' + numbe1 + ' &&& ' + ' Number2   : ' + numbe2 }}</p>
 <!---interpolation with hard coded strings -->
@@ -8,10 +8,26 @@
 <!--- interpolation with ternary operator-->
 <p>Full name : {{ getFullName() }}</p>
 <!---interpolation with method-->
-<button [disabled]="IsDisabled" (click)="onClick()">clickhere</button>
+
 <!---property binding and event binding-->
-<app-student></app-student>
-<button style="color:red;font-weight:bold;font-size:50px">clickme</button>
+
 <!---Inline styling in style binding-->
-<button [style.font-weight]="isBold ? text : 'normal'">clickme</button>
+
 <!---styling binding with ternary operator-- -->
+<div class="mystyle">
+  <h2 [style.color]="color">{{ title }}</h2>
+  <h2 [ngStyle]="titleStyles">Hello World</h2>
+  <button (click)="updateColor()">Update Color</button>
+  {{ greeting }}
+</div>
+
+<!-- <app-student></app-student> student componet -->
+
+<div id="user">
+  <button [disabled]="IsDisabled" (click)="onClick()">clickhere</button>
+  <button style="color:red;font-weight:bold;font-size:50px">clickme</button>
+  <button [style.font-weight]="isBold ? text : 'normal'">clickme</button>
+</div>
+<input [(ngModel)]="name" />
+<br />
+You entered : {{ name }} <app-sample></app-sample>

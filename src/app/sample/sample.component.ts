@@ -2,9 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-sample',
-  templateUrl: './sample.component.html',
-  styleUrls: ['./sample.component.css'],
+  template: ` Hey <input [(ngModel)]='name'>
+  <br>
+  You entered text {{name}}
+  `,
 })
 export class SampleComponent {
-  2;
+  name: string = '';
 }
