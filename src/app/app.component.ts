@@ -48,4 +48,9 @@ export class AppComponent {
     backgroundColor: 'Grey',
   };
   name: string = "";
+
+
+
+
+  
 }
