@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { data } from './data';
 
 @Component({
   selector: 'hello-world',
@@ -8,8 +9,8 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   IsDisabled: boolean = false; //  property value for property binding
 
-  PageHeader: string = null;
- 
+  // PageHeader: string = null;
+
   // imagePath: string = 'http://pragimtech.com/images/logo.jpg';
 
   onClick(): void {
