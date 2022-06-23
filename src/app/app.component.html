@@ -1,3 +1,8 @@
+<h1>{{ PageHeader ? PageHeader : 'No Header' }}</h1>
+<img class="image" [src]="imageurl" />
+
+<!-- <h2>FullName : {{ getFullName() }}</h2> -->
+
 <app-sample></app-sample>
 <app-student></app-student>
 <h1 [ngStyle]="userStyles">{{ 'fname ' + fname }}</h1>
@@ -6,9 +11,10 @@
 <!---interpolation with hard coded strings -->
 <h2>10+5*7-6 = {{ 10 + 5 * 7 - 6 }}</h2>
 <!---interpolation with mathmatical experssion-->
-<h2>20%of 200={{ numbe2 ? numbe2 * 0.3 : 'not available' }}</h2>
+<h2>20%of 200={{ numbe2 % 2 == 0 ? 'it is even' : 'it isodd' }}</h2>
 <!--- interpolation with ternary operator-->
-<p>Full name : {{ getFullName() }}</p>
+<!-- <p>Full name : {{ getFullName() }}</p> -->
+
 <!---interpolation with method-->
 
 <!---property binding and event binding-->
@@ -16,15 +22,15 @@
 <!---Inline styling in style binding-->
 
 <!---styling binding with ternary operator-- -->
-<div class="mystyle">
+<!-- <div class="mystyle">
   <h2 [style.color]="color">{{ title }}</h2>
   <h2 [ngStyle]="titleStyles">Hello World</h2>
   <button (click)="updateColor()">Update Color</button>
   {{ greeting }}
-</div>
+</div> -->
 
 <!-- <app-student></app-student> student componet -->
-
+<!-- 
 <div id="user">
   <button [disabled]="IsDisabled" (click)="onClick()">clickhere</button>
   <button style="color:red;font-weight:bold;font-size:50px">clickme</button>
@@ -32,4 +38,4 @@
 </div>
 <input [(ngModel)]="name" />
 <br />
-You entered : {{ name }}
+You entered : {{ name }} -->

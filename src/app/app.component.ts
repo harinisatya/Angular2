@@ -8,6 +8,10 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   IsDisabled: boolean = false; //  property value for property binding
 
+  PageHeader: string = null;
+ 
+  // imagePath: string = 'http://pragimtech.com/images/logo.jpg';
+
   onClick(): void {
     alert('HelloWorld'); // method for event binding
   }
@@ -16,6 +20,9 @@ export class AppComponent {
 
   fname: string = 'Harini';
   lname: string = 'Nannuta';
+
+  firstname: string = 'Isha';
+  lastname: string = 'Nannuta';
 
   imageurl: string = 'https://bit.ly/bg-saint';
   //  image url for interpolation to display images
@@ -47,10 +54,5 @@ export class AppComponent {
     fontSize: '50px',
     backgroundColor: 'Grey',
   };
-  name: string = "";
-
-
-
-
-  
+  name: string = '';
 }
