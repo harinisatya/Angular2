@@ -11,6 +11,8 @@ export class StudentComponent {
 
   buttonClass: string = 'colorClass';
 
+  columnSpan: number = 2;
+  imagePath: string = 'Tom.png';
   firstName: string = 'Tom';
   lastName: string = 'Hopkins';
   gender: string = 'Male';
@@ -21,7 +23,7 @@ export class StudentComponent {
 
   getFullName(): string {
     return this.FullName + '  ' + this.LastName;
-    
+
     // interpolation with method
   }
 }
