@@ -1,1 +1,7 @@
 <button style="color : red">Hibutton</button>
+<button style="color : red" [style.font-Weight]="isBold ? 'bold' : 'normal'">
+  MyButton
+</button>
+<button style="color : red" [style.font-size.px]="fontSize">Harini</button>
+
+<button style="color : red" [ngStyle]="addStyles()">Hello</button>
