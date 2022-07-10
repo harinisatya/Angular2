@@ -9,6 +9,7 @@ export class TestsampleComponent {
   isBold: boolean = true;
   fontSize: number = 30;
   isItalic: boolean = true;
+  user: string = '';
 
   addStyles() {
     let styles = {

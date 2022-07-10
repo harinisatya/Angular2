@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SampleComponent {
   // ***** Code for Class Binding *****
+  
   classesToApply: string = 'colorClass italicClass sizeClass';
   applyColorClass: boolean = true; // toggle value by placing !
   applyItalicClass: boolean = true;
